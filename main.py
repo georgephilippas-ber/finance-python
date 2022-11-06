@@ -1,5 +1,5 @@
 from __future__ import annotations
-import math
+
 
 # This is a sample Python script.
 
@@ -55,14 +55,14 @@ class Fixed:
         return self.length
 
     def accumulate(self, instruments: [Fixed], capitals: [float]):
-        for instrument in instruments
+        pass
 
 
 certificate = Fixed(5, 0, 0.015, 0.0012, 0.05, 5)
 deutsche_bank_3 = Fixed(3, 0.025, 0.0025, 0.0012, 0, 5)
 deutsche_bank_1 = Fixed(1, 0.0115, 0.0025, 0.0012, 0, 5)
 
-#print(sum([certificate.flow(160_000), deutsche_bank_1.flow(355_000), deutsche_bank_3.flow(185_000)]))
+# print(sum([certificate.flow(160_000), deutsche_bank_1.flow(355_000), deutsche_bank_3.flow(185_000)]))
 
 
 print(certificate.flow(160_000))
@@ -70,4 +70,3 @@ print(deutsche_bank_3.flow(355_000))
 print(deutsche_bank_1.flow(185_000))
 
 print(185_000 * 0.0115)
-
