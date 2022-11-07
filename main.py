@@ -33,3 +33,5 @@ if __name__ == "__main__":
     print(portfolio.total())
     print("flow")
     print(portfolio.flow())
+
+    print(portfolio.to_df())

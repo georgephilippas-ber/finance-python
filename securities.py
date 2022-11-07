@@ -2,8 +2,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "",
-                "identifier": "",
+                "name": "1-year Deutsche Bank",
+                "identifier": "0001",
                 "term": 1,
                 "interest": 1.15 / 100.,
                 "entry": 0.25 / 100.,
@@ -15,8 +15,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "",
-                "identifier": "",
+                "name": "3-year Detusche Bank",
+                "identifier": "0002",
                 "term": 3,
                 "interest": 2.5 / 100.,
                 "entry": 0.55 / 100.,
@@ -28,8 +28,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "",
-                "identifier": "",
+                "name": "Certificate on DAX",
+                "identifier": "0004",
                 "term": 5,
                 "interest": 0 / 100.,
                 "entry": 1.5 / 100.,

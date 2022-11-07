@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import pandas as pd
+
 
 class Fixed:
     name: str
@@ -45,8 +47,11 @@ class Fixed:
     def get_length(self):
         return self.length
 
-    def full_name(self):
-        return self.name + " " + self.identifier
+    def get_name(self):
+        return self.name
+
+    def get_identifier(self):
+        return self.identifier
 
     @staticmethod
     def accumulate_flow(instruments: [Fixed], capitals: [float]):
@@ -89,3 +94,11 @@ class Portfolio:
 
     def initial(self):
         return Fixed.accumulate_flow(self.instruments, self.capitals)[0]
+
+    def to_df(self) -> pd.DataFrame:
+        dataframe_ = pd.DataFrame(
+            ([instrument.get_identifier(), instrument.get_name(), capital, *instrument.flow(capital)] for
+             instrument, capital in
+             zip(self.instruments, self.capitals)))
+
+        return dataframe_.append([["", "Gesamtmenge", self.total_capital(), *self.flow()]]).set_index(0)
