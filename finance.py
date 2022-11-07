@@ -109,3 +109,4 @@ class Portfolio:
                                                                range(0, self.years + 1)]]).set_index("WKN")
 
         return dataframe_
+
