@@ -26,5 +26,8 @@ if __name__ == "__main__":
     portfolio = Portfolio.from_object(SECURITIES, years=5)
 
     print(portfolio.to_df().to_string())
+    print()
 
-    print(portfolio.total_capital(), portfolio.initial(), portfolio.total())
+    print("capital", portfolio.total_capital())
+    print("flow", portfolio.total())
+    print("initial", portfolio.initial())

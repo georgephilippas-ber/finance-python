@@ -10,7 +10,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 190_000
+        "capital": 200_000
     },
     {
         "characteristics":
@@ -19,11 +19,11 @@ SECURITIES = [
                 "identifier": "DB9U8N",
                 "term": 3,
                 "interest": 2.5 / 100.,
-                "entry": 0.55 / 100.,
+                "entry": 0.50 / 100.,
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 400_000
+        "capital": 390_000
     },
     {
         "characteristics":
