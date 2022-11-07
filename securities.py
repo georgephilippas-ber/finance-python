@@ -37,5 +37,5 @@ SECURITIES = [
                 "final": 5 / 100,
             },
         "capital": 110_000
-    }
+    },
 ]

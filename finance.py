@@ -105,7 +105,7 @@ class Portfolio:
             [*[[instrument.get_identifier(), instrument.get_name(), capital, *instrument.flow(capital)] for
                instrument, capital in
                zip(self.instruments, self.capitals)], ["", "total", self.total_capital(), *self.flow()]],
-            columns=["WKN / ISIN", "security", "Kapitalanlage",
-                     *[year + beginning for year in range(0, self.years + 1)]]).set_index("WKN / ISIN")
+            columns=["WKN/ISIN", "security", "Kapitalanlage",
+                     *[year + beginning for year in range(0, self.years + 1)]]).set_index("WKN/ISIN")
 
         return dataframe_
