@@ -23,15 +23,6 @@ if __name__ == '__main__':
 
 
 if __name__ == "__main__":
-    portfolio = Portfolio.from_object(SECURITIES, 5)
+    portfolio = Portfolio.from_object(SECURITIES, years=5)
 
-    print("capital")
-    print(portfolio.total_capital())
-    print("initial")
-    print(portfolio.initial())
-    print("cash")
-    print(portfolio.total())
-    print("flow")
-    print(portfolio.flow())
-
-    print(portfolio.to_df())
+    print(portfolio.to_df().to_string())

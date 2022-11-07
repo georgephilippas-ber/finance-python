@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import pandas as pd
 
+from datetime import datetime
+
 
 class Fixed:
     name: str
@@ -72,16 +74,19 @@ class Portfolio:
     instruments: [Fixed]
     capitals: [float]
 
-    def __init__(self, instruments: [Fixed], capitals: [float]):
+    years: int
+
+    def __init__(self, instruments: [Fixed], capitals: [float], years: int):
         self.instruments = instruments
         self.capitals = capitals
+        self.years = years
 
     @staticmethod
-    def from_object(object_array: [dict], years: int) -> Portfolio:
+    def from_object(object_array: [dict], *, years: int) -> Portfolio:
         instruments = [Fixed(**instrument["characteristics"], length=years) for instrument in object_array]
         capitals = [instrument["capital"] for instrument in object_array]
 
-        return Portfolio(instruments, capitals)
+        return Portfolio(instruments, capitals, years)
 
     def flow(self):
         return Fixed.accumulate_flow(self.instruments, self.capitals)
@@ -95,10 +100,12 @@ class Portfolio:
     def initial(self):
         return Fixed.accumulate_flow(self.instruments, self.capitals)[0]
 
-    def to_df(self) -> pd.DataFrame:
+    def to_df(self, beginning: int = datetime.now().year) -> pd.DataFrame:
         dataframe_ = pd.DataFrame(
             ([instrument.get_identifier(), instrument.get_name(), capital, *instrument.flow(capital)] for
              instrument, capital in
-             zip(self.instruments, self.capitals)))
+             zip(self.instruments, self.capitals)), columns=["WKN", "security", "Kapitalanlage",
+                                                             *[year + beginning for year in
+                                                               range(0, self.years + 1)]]).set_index("WKN")
 
-        return dataframe_.append([["", "Gesamtmenge", self.total_capital(), *self.flow()]]).set_index(0)
+        return dataframe_

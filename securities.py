@@ -2,8 +2,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "1-year Deutsche Bank",
-                "identifier": "0001",
+                "name": "1,15 % EUR Festzinsanleihe 2023",
+                "identifier": "DB9U8Q",
                 "term": 1,
                 "interest": 1.15 / 100.,
                 "entry": 0.25 / 100.,
@@ -15,8 +15,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "3-year Detusche Bank",
-                "identifier": "0002",
+                "name": "2,50 % EUR Grüne Festzinsanleihe 2025",
+                "identifier": "DB9U8N",
                 "term": 3,
                 "interest": 2.5 / 100.,
                 "entry": 0.55 / 100.,
@@ -28,8 +28,8 @@ SECURITIES = [
     {
         "characteristics":
             {
-                "name": "Certificate on DAX",
-                "identifier": "0004",
+                "name": "Kapitalschutz-Zertifikat Plus Laufzeit Teilhabe Ausgabeaufschlag DAX",
+                "identifier": "SH9ZWT",
                 "term": 5,
                 "interest": 0 / 100.,
                 "entry": 1.5 / 100.,
