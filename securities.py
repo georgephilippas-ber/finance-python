@@ -10,7 +10,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 210_000
+        "capital": 200_000
     },
     {
         "characteristics":
@@ -23,7 +23,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 400_000
+        "capital": 300_000
     },
     {
         "characteristics":
@@ -36,6 +36,19 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 5 / 100,
             },
-        "capital": 100_000
+        "capital": 110_000
+    },
+    {
+        "characteristics":
+            {
+                "name": "Grüne Marktzinsanleihe 12 Monats-Euribor",
+                "identifier": "DB9U8P",
+                "term": 5,
+                "interest": 2.65 / 100.,
+                "entry": 1.0 / 100.,
+                "hold": 0.12 / 100,
+                "final": 0 / 100,
+            },
+        "capital": 110_000
     },
 ]
