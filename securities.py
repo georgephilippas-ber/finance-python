@@ -10,7 +10,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 200_000
+        "capital": 190_000
     },
     {
         "characteristics":
@@ -23,7 +23,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 300_000
+        "capital": 290_000
     },
     {
         "characteristics":
@@ -36,7 +36,7 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 5 / 100,
             },
-        "capital": 110_000
+        "capital": 120_000
     },
     {
         "characteristics":
@@ -49,6 +49,6 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0 / 100,
             },
-        "capital": 110_000
+        "capital": 120_000
     },
 ]
