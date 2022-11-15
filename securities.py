@@ -23,12 +23,25 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 0,
             },
-        "capital": 290_000
+        "capital": 200_000
     },
     {
         "characteristics":
             {
-                "name": "Kapitalschutz-Zertifikat Plus Laufzeit Teilhabe Ausgabeaufschlag DAX",
+                "name": "Grüne Marktzinsanleihe 12 Monats-Euribor",
+                "identifier": "DB9U8W/0TZ3DX",
+                "term": 5,
+                "interest": 3.10 / 100.,
+                "entry": 1.0 / 100.,
+                "hold": 0.12 / 100,
+                "final": 0 / 100,
+            },
+        "capital": 90_000
+    },
+    {
+        "characteristics":
+            {
+                "name": "Kapitalschutz-Zertifikat Plus DAX",
                 "identifier": "SH9ZX2/0TZ3DZ",
                 "term": 5,
                 "interest": 0 / 100.,
@@ -49,6 +62,19 @@ SECURITIES = [
                 "hold": 0.12 / 100,
                 "final": 4 / 100,
             },
-        "capital": 110_000
+        "capital": 0
+    },
+    {
+        "characteristics":
+            {
+                "name": "Kapitalschutz-Zertifikat Plus MSCI World qEUR",
+                "identifier": "DB9U9A/0TZ3E2",
+                "term": 4,
+                "interest": 0 / 100.,
+                "entry": 1.5 / 100.,
+                "hold": 0.12 / 100,
+                "final": 4 / 100,
+            },
+        "capital": 100_000
     },
 ]

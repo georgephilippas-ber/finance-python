@@ -30,3 +30,6 @@ if __name__ == "__main__":
     print("capital", portfolio.total_capital())
     print("flow", portfolio.total())
     print("initial", portfolio.initial())
+
+    portfolio.to_df()
+#%%
